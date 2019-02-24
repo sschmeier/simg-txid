@@ -18,4 +18,7 @@ Then, it can be used, e.g.:
 
 ```bash
 singularity exec simg-txid.simg samtools view -h
+
+# test R
+singularity exec --bind /mnt/disk1/seb simg-txid.simg Rscript test.R > session.txt
 ```
